@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Engine</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="search">
+        <header class="search__header">
+          <h1 class="logo" aria-label="ProSearch">Search<span class="logo__accent">Engine</span></h1>
+          <p class="tagline">Search Google, or jump straight to YouTube and Twitch.</p>
+        </header>
+
+        <div class="search__bar" role="search" aria-label="Search">
+          <img class="search__icon" src="search.svg" alt="" aria-hidden="true" />
+          <input
+            id="query"
+            class="search__input"
+            type="search"
+            placeholder="Search..."
+            autocomplete="off"
+            inputmode="search"
+          />
+        </div>
+
+        <div class="search__actions" aria-label="Actions">
+          <button id="googleBtn" class="btn btn--primary" type="button" aria-label="Search Google">
+            Search
+          </button>
+
+          <button id="youtubeBtn" class="btn btn--secondary" type="button" aria-label="Open YouTube">
+            <img class="btn__icon" src="youtube.svg" alt="" aria-hidden="true" />
+            YouTube
+          </button>
+
+          <button id="twitchBtn" class="btn btn--secondary" type="button" aria-label="Open Twitch">
+            <img class="btn__icon" src="twitch.svg" alt="" aria-hidden="true" />
+            Twitch
+          </button>
+        </div>
+
+        <p class="hint">Tip: press Enter to search Google.</p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
